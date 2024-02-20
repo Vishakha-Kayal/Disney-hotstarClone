@@ -1,0 +1,263 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+html{
+    font-size: 106.25%;
+    /* 15px */
+}
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.162);
+    position: relative;
+}
+
+nav {
+    z-index: 10;
+    padding: 1.5vw;
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    height: 100vh;
+    width: 38%;
+    position: fixed;
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+}
+.box{
+    width: 80%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+}
+.logo img {
+    padding-top: 2rem;
+    width: 4vw;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    gap: 2rem;
+    color: grey;
+    cursor: pointer;
+}
+.icon-details{
+    display: flex;
+    align-items: center;
+    gap:0.9rem;
+}
+.ri:hover .nameOfIcon{
+    color:  white;
+    visibility: visible;
+}
+
+.nameOfIcon{
+    visibility: hidden;
+    font-size: 0.6em;
+}
+.first-section {
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)),url('https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3192/1643192-i-e608c66aba61');
+    background-attachment: fixed;
+    background-size: 110% 100%;
+}
+.arya {
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),url('aryaposter.webp');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.second-section {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top:85%;
+    padding-left:8%;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+.heading h1{
+    font-weight: 400;
+}
+.latest-releases{
+    display: flex;
+    gap:0.3rem;
+    overflow-x: auto;
+    overflow: hidden;
+}
+.latest-releases div{
+    min-width:13vw;
+    height:48vh;
+}
+.latest-releases img{
+    width:100%;
+    height: 100%;
+}
+.third{
+    top:140%;
+}
+.latest-sports{
+    display: flex;
+    gap:0.3rem;
+    overflow-x: auto;
+    overflow: hidden;
+}
+.latest-sports div{
+    border-radius: 4px;
+    overflow: hidden;
+    min-width:20vw;
+    height:30vh;
+}
+.latest-sports img{
+    width:100%;
+    height: 80%;
+}
+.latest-sports h4{
+    color: white;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+.third .left-btn{
+    position: absolute;
+    top:18%;
+}
+.third .left-btn i ,.third .right-btn i
+{
+    color:black;
+}
+.third .right-btn{
+    position: absolute;
+    top:18%;
+}
+.heading2 h1{
+    margin-bottom: 4vh;
+}
+.fourth{
+    top:185%;
+}
+.left-btn i{
+    z-index: 13;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top:25%;
+    font-size: 3em;
+    font-weight: 300;
+}
+.right-btn{
+    cursor: pointer;
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    top:25%;
+    right:0;
+    font-size: 3em;
+}
+article {
+    position: absolute;
+    top: 23%;
+    left: 8.5%;
+}
+
+article p {
+    color: rgb(222, 215, 215);
+    width: 36%;
+    margin-bottom: 1.7rem;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    word-spacing: 0.2rem;
+}
+
+.details {
+    margin-top: 0.7rem;
+    display: flex;
+    gap: 1rem;
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 1.4rem;
+    margin-top: 1.4rem;
+}
+
+.bullet span {
+    color: grey;
+}
+
+.genre {
+    display: flex;
+    gap: 1rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.genre h3 {
+    padding-right: 8px;
+    border-right: 2px solid wheat;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.btn {
+    padding: 0 1vw;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: grey;
+    width: 30%;
+    height: 8vh;
+    gap: 1rem;
+    text-transform: capitalize;
+    border-radius: 15px;
+    color: white;
+    font-weight: 200;
+}
+
+.btn span {
+    width: 5%;
+}
+
+.btn h2 {
+    width: 77%;
+    font-size: 1.2rem;
+}
+
+/* .btn div {
+    width: 18%;
+}
+
+.plus {
+    color: white;
+    font-size: 2em;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vw;
+    border-radius: 5px;
+} */
+
+.last-content {
+    display: flex;
+    gap: 1rem;
+}
